@@ -5,7 +5,7 @@ metadata:
     service: frontend
   name: frontend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       service: frontend
@@ -16,7 +16,7 @@ spec:
         api: external
     spec:
       containers:
-      - image: doanthi159/udagram-frontend:v1
+      - image: doanthi159/udagram-frontend:v6
         name: frontend
         imagePullPolicy: Always
         ports:
